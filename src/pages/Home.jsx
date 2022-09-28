@@ -32,7 +32,7 @@ function Home() {
       SetproducSectionTitle(t('producSectionTitle'));
       SetproducSectionImgInfo(t('producSectionImgInfo',{returnObjects:true}))
     },
-    [i18n.language]
+    [i18n.language,t]
   );
   return (
     <div className="home-page page">

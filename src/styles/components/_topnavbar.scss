@@ -27,9 +27,11 @@
         color: $primaryColor;
         margin-right: 5px; //this will change in rtl file
       }
-      a {
+      button {
         color: #fff !important;
         font-size: 14px;
+        background-color: transparent;
+        border: none;
       }
     }
     .social-icons {
