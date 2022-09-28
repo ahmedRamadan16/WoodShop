@@ -17,7 +17,7 @@ function About() {
       SetaboutPageTitle(t("aboutPageTitle"));
       SetaboutPagedesc(t("aboutPagedesc", { returnObjects: true }));
     },
-    [i18n.language]
+    [i18n.language, t]
   );
   return (
     <div className="about-page page">

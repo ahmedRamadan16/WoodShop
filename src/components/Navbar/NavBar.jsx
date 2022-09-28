@@ -31,7 +31,7 @@ function NavBar() {
       SetfireratedparticleboardsLinks(t("fireratedparticleboardsLinks", { returnObjects: true }));
 
     },
-    [i18n.language]
+    [i18n.language,t]
   );
 
     const handleClick=(e)=>{
