@@ -67,6 +67,11 @@ function NavBar() {
             left:auto;
             right:185px
           }
+         
+          .navbar-expand-lg .navbar-collapse.show-nav {
+            left:auto;
+            right:0    
+        
            `
             document.head.appendChild(style); 
           }else{

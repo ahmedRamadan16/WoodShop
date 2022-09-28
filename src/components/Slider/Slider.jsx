@@ -17,24 +17,28 @@ import {Navigation} from "swiper";
 export default function Slider({productData}) {
 const [slidesPerView,SetslidesPerView]=useState(3);
   const [direction,setDirection]=useState('ltr');
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+  window.onresize=function()
+  {
+    setwindowWidth(window.innerWidth);
+  }
   useEffect(() => {
   
-    const switchSlider=()=>{
-      window.onresize=function(){
 
-        if(window.innerWidth <1000)
+        if(windowWidth <1000)
         {
           SetslidesPerView(1);
         }else{
           SetslidesPerView(3);
         }
-      }
-    }
-    switchSlider();
-  }, [window.innerWidth]);
+      
+  }, [windowWidth]);
+  let mainDir=document.documentElement.dir;
   useEffect(()=>{
-    setDirection(document.documentElement.dir);
-  },[document.documentElement.dir])
+    setDirection(mainDir);
+  },[mainDir])
+  console.log(direction)
   return (
     <>
       <Swiper
