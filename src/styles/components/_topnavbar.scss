@@ -1,0 +1,66 @@
+.top-navbar {
+  height: auto;
+  background-color: $topNavColor;
+  color: #fff;
+
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .phone {
+      svg {
+        color: $primaryColor;
+        margin-right: 5px; //this will change in rtl file
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .emails {
+      svg {
+        color: $primaryColor;
+        margin-right: 5px; //this will change in rtl file
+      }
+      a {
+        color: #fff !important;
+        font-size: 14px;
+      }
+    }
+    .social-icons {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 1rem;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          transition: 0.3s ease-in;
+          border: 2px solid rgba(39, 48, 68, 0.5);
+          padding: 0.5rem;
+          cursor: pointer;
+          svg {
+            font-size: 1rem;
+          }
+          &:hover {
+            background-color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}

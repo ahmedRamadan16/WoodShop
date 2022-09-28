@@ -1,0 +1,199 @@
+.home-page {
+  .landing-section {
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+    }
+    .home-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 60px;
+      z-index: 15;
+      @media (max-width: 767px) {
+        left: 0;
+        transform: translateX(0);
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+      }
+      span {
+        color: #8bc92d;
+        font-weight: bold;
+      }
+    }
+    .row {
+      margin-top: -200px;
+      z-index: 10;
+      position: relative;
+      gap: 2rem;
+      @media (max-width: 991px) {
+        margin-top: 20px;
+        gap: 0;
+        row-gap: 1rem;
+      }
+      @media (min-width: 992px) {
+        .col-lg-2 {
+          width: 17.96667% !important;
+        }
+      }
+      .box {
+        border: 5px solid #ccc;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+        &:hover {
+          transform: translateY(-10px);
+        }
+        img {
+          max-width: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        h4 {
+          position: absolute;
+          color: #fff;
+          font-size: 18px;
+          bottom: 0;
+          left: 0;
+          background-color: #8bc92d;
+          margin: 0;
+          padding: 10px;
+          border-radius: 6px;
+          width: fit-content;
+          &:nth-of-type(3) {
+            height: auto;
+            height: 200px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .home-intro {
+    background-color: #ddd;
+    margin-top: 50px;
+    padding: 2rem 0;
+    .row {
+      img {
+        max-width: 100%;
+      }
+      .info {
+        h4 {
+          font-weight: bold;
+          font-size: 2rem;
+          color: $primaryColor;
+        }
+        p {
+          color: #000 !important;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+  .home-bg-img-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images//woodshow2019-cover-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    .right {
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      h2 {
+        font-size: 4rem;
+        max-width: 80%;
+        margin: 0 auto;
+        font-weight: bold;
+        @media (max-width: 991px) {
+          max-width: 100%;
+          font-size: 3rem;
+        }
+      }
+      svg {
+        border: 5px solid #ccc;
+        font-size: 3rem;
+      }
+    }
+  }
+  .home-contact-section {
+    background-color: #463018;
+    padding: 3rem 0;
+    color: #fff;
+    @media (max-width: 991px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .row {
+      align-items: center;
+      button {
+        padding: 1rem 3rem;
+        font-size: 18px;
+        border-radius: 1rem;
+      }
+    }
+  }
+  .slider-section {
+    margin: 100px 0;
+    > h2 {
+      text-align: center;
+      position: relative;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: bold;
+      color: $primaryColor;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 5px;
+        background-color: $primaryColor;
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #463018;
+    }
+  }
+}

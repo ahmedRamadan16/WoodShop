@@ -1,0 +1,105 @@
+{ 
+  "mainlinks" : [
+    {"link":"Home","path":"/"},
+    {"link":"About Us","path":"/about"},
+    {"link":"new Arrivals","path":"/newArrivals","haveSubMenu":true,"submenu":"newArrivalsLinks"},
+    {"link":"Products","path":"/products" ,"haveSubMenu":true,"submenu":"ProductLinks"},
+    {"link":"Images","path":"/images","haveSubMenu":true,"submenu":"ImagesLinks"},
+    {"link":"Media","path":"/media","haveSubMenu":true,"submenu":"mediaLinks"},
+    {"link":"Careers","path":"/careers"},
+    {"link":"Contact Us","path":"/contact"}
+  
+],
+
+ "newArrivalsLinks" : [
+  {"link":"PVC MDF From YILDIZ TREND","path":"/pvcmdf"},
+  {"link":"UV LAC MDF From YILDIZ TREND","path":"/uvlac"},
+  {"link":"FUTURE PLEX film-faced Plywood","path":"/fUTUREplex"},
+  {"link":"German BauBuche – by Pollmeier","path":"/germanBauBuche"},
+  {"link":"POLLMEIER SC sanded Beech","path":"/pollmeiersc"},
+  {"link":"PVC EDGE BAND – GLUE","path":"/pvcEdge"}
+
+],
+
+ "ProductLinks": [
+  {"link":"Lumber","path":"/lumber","haveSubMenu":true,"submenu":"LumberLinks"},
+  {"link":"Panels","path":"/panels","haveSubMenu":true,"submenu":"panelsLinsk"},
+  {"link":"American Veneers","path":"/americanVeneers"},
+  {"link":"Fire Rated Particle Boards","path":"/fireRated","haveSubMenu":true,"submenu":"fireratedparticleboardsLinks"},
+  {"link":"Laminated Boards","path":"/laminatedBoards"},
+  {"link":"Pvc Edge Band - Glue","path":"/pvcEdge"}
+
+ 
+ 
+],
+"ImagesLinks" : ["Show Images", "Store Images"],
+"mediaLinks" : ["Show Videos", "Store Videos"],
+"LumberLinks" : [
+  "American Southern yellow pine",
+  "American Black Walnut",
+  "American Ash",
+  "American Red Oak",
+  "American Hard Maple",
+  "Live-Edge Slabs",
+  "Pollmeier German Beech",
+  "German BauBuche – by Pollmeier",
+  "AFRICAN Hardwoods",
+  "RUSSIAN PINE",
+  "Beech Wood"
+],
+"panelsLinsk": [
+  "Mdf",
+  "Blockboard",
+  "Plywood",
+  "Chipboard ( particle board )"
+],
+"fireratedparticleboardsLinks" : [
+  "FireBAN – FD30min",
+  "FireBAN – FD60min",
+  "FireBAN – FD90min",
+  "FireBAN – FD120min"
+],
+
+"homeTitle" : "The Wood <span>Experts</span>",
+
+"homeBlocks" : [
+
+  
+  {"h2": "Lumber"},
+  {"h2": "Panels"},
+  {"h2": "Fire Rated Particle Boards"},
+  {"h2": "Laminated Mdf"},
+  {"h2": "Pvc Edge Band"}
+],
+
+"homeAboutsection" : [
+  {
+    "title": "NO. 1 WOOD RETAIL STORE IN EGYPT",
+    "desc":
+      "Since 1986, Along these years of experience, offering the uncompromised quality, wide variety and prompt delivery, earned us the respect and trust of the ever-growing wood customers in Egypt. Authorized Dealer for the well-known brands of the American Veneers.",
+    "button": "Read More"
+  }
+],
+"imgSection" : "<h2>Cairo Wood Show 2019</h2>",
+
+"homecontactSection" : [
+ {"h2": "NEED SOME HELP? SEND US A MESSAGE NOW !","button":"Contact Us"}
+],
+
+"producSectionTitle" : "Latest Products",
+"producSectionImgInfo" : [
+  "American Red Oak Veneer",
+  "FUTURE PLEX film-faced Plywood",
+  "FORRAST Edge BAND ",
+  "BAUBUCHE by POLMEIER ",
+  "POLLMEIER SC sanded Beech"
+],
+
+"aboutPageTitle" : "Abo Khaled Wood Shop",
+
+"aboutPagedesc" : [
+  { "h2": "No. 1 wood retail store in Egypt","parg1":"Since 1986, Along these years of experience, offering the uncompromised quality, wide variety and prompt delivery, earned us the respect and trust of the ever-growing wood customers in Egypt." ,"parg2":"<span>Authorized agent for the well-known brands of the American Veneers.</span> Sole agent for FireBAN, the fire rated particle boards up to 120 minutes , certified by IFC , BM Trada (Exova) Q Mark certification , CCS.Authorized agent for GOOD WOOD (the biggest block board factory in Egypt), and for other many other blockboard factories.Retail store is available for workshops, small factories and our users."}
+   
+    
+]
+}
